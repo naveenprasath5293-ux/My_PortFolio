@@ -1,17 +1,11 @@
 import Navbar from "../components/Navbar";
 import SEO from "../components/SEO";
-import Footer from "../components/Footer/Footer";
-import ProjectHero from "../components/projects/ProjectHero";
-import ProjectOverview from "../components/projects/ProjectOverview";
-import ProjectFeatures from "../components/projects/ProjectFeatures";
-import ScreenshotGallery from "../components/projects/ScreenshotGallery";
-import TechStack from "../components/projects/TechStack";
-import Architecture from "../components/projects/Architecture";
-import Challenges from "../components/projects/Challenges";
-import Learnings from "../components/projects/Learnings";
-import FutureRoadmap from "../components/projects/FutureRoadmap";
-import ProjectStats from "../components/projects/ProjectStats";
-import ProjectCTA from "../components/projects/ProjectCTA";
+import ProjectHero from "../components/Projects/ProjectHero";
+import ProjectOverview from "../components/Projects/ProjectOverview";
+import ProjectFeatures from "../components/Projects/ProjectFeatures";
+import ScreenshotGallery from "../components/Projects/ScreenshotGallery";
+import TechStack from "../components/Projects/TechStack";
+import ProjectCTA from "../components/Projects/ProjectCTA"; "../components/projects/ProjectCTA";
 import {
   CASE_STUDY,
   OVERVIEW,

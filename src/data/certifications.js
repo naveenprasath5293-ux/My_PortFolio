@@ -3,15 +3,15 @@
 // Set `url: null` to hide the "View Certificate" button on a card.
 export const CERTIFICATIONS = [
   {
-    id: "java-fullstack",
-    name: "Java Full Stack Development",
+    id: "Introduction To HTML And Css",
+    name: "Introduction to HTML and CSS",
     issuer: "Issuing organization",
     year: "2025",
     url: null,
   },
   {
-    id: "react-dev",
-    name: "React Development",
+    id: "Website Testing and Deployment",
+    name: "Website Testing and Deployment",
     issuer: "Issuing organization",
     year: "2025",
     url: null,

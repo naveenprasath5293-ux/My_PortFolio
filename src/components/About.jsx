@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { User } from "lucide-react";
 import SectionHeading from "./SectionHeading";
 
 const fadeUp = {
@@ -20,43 +19,53 @@ export default function About() {
       <div className="mx-auto max-w-6xl">
         <SectionHeading eyebrow="about" title="Who I am" />
 
-        <div className="grid gap-12 md:grid-cols-[minmax(0,280px)_1fr] md:items-start">
-          {/* Photo placeholder */}
+        <div className="mt-12 grid gap-12 md:grid-cols-[280px_1fr] md:items-center">
+          {/* Profile Picture */}
           <motion.div
             variants={fadeUp}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: true, amount: 0.4 }}
+            viewport={{ once: true }}
             custom={0.1}
-            className="glass mx-auto flex aspect-square w-56 items-center justify-center rounded-2xl md:mx-0 md:w-full"
+            className="flex justify-center"
           >
-            <div className="flex flex-col items-center gap-2 text-muted">
-              <User size={40} strokeWidth={1.5} />
-              <span className="font-mono text-xs">photo coming soon</span>
-            </div>
+       <motion.div
+  variants={fadeUp}
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: true }}
+  custom={0.1}
+  className="flex justify-center"
+>
+  <img
+    src="/images/profile.jpg"
+    alt="Naveen V"
+    className="h-72 w-72 rounded-2xl object-cover border-2 border-warm-white
+     shadow-2xl"
+  />
+</motion.div>
+
           </motion.div>
 
-          {/* Intro + objective */}
+          {/* Content */}
           <div className="space-y-8">
             <motion.div
               variants={fadeUp}
               initial="hidden"
               whileInView="show"
-              viewport={{ once: true, amount: 0.4 }}
+              viewport={{ once: true }}
               custom={0.2}
             >
-              <h3 className="mb-3 font-display text-lg font-semibold text-cyan-soft">
+              <h3 className="mb-3 font-display text-lg font-semibold text-red-soft">
                 Introduction
               </h3>
+
               <p className="leading-relaxed text-muted">
-                I&rsquo;m Naveen V, a BCA student and Full Stack Developer
-                currently interning at ShishaVortex, where I build
-                production frontend interfaces with React. I like turning
-                loosely defined ideas into working software — most recently
-                an AI-powered news platform that pairs a React frontend with
-                Google Gemini for summarization. My focus is React, Tailwind
-                CSS and REST APIs today, with a growing interest in Web3 and
-                blockchain development.
+                I’m Naveen V, a BCA student and Full Stack Developer currently
+                interning at ShishaVortex. I build modern React applications,
+                REST APIs, and AI-powered web solutions. My primary interests
+                are Full Stack Development, Artificial Intelligence, and
+                Blockchain Technology.
               </p>
             </motion.div>
 
@@ -64,18 +73,18 @@ export default function About() {
               variants={fadeUp}
               initial="hidden"
               whileInView="show"
-              viewport={{ once: true, amount: 0.4 }}
+              viewport={{ once: true }}
               custom={0.3}
             >
-              <h3 className="mb-3 font-display text-lg font-semibold text-cyan-soft">
-                Career objective
+              <h3 className="mb-3 font-display text-lg font-semibold text-red-soft">
+                Career Objective
               </h3>
+
               <p className="leading-relaxed text-muted">
-                Looking for a full-stack developer role where I can grow
-                from frontend-focused work into complete product ownership —
-                shipping features end to end, learning from experienced
-                engineers, and eventually applying what I know about AI
-                integration and blockchain to real-world products.
+                Seeking a Full Stack Developer position where I can contribute
+                to real-world applications, improve my software engineering
+                skills, and build scalable AI-powered products while learning
+                from experienced developers.
               </p>
             </motion.div>
           </div>

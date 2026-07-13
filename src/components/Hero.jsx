@@ -93,7 +93,7 @@ export default function Hero() {
             <Download size={16} />
             Download Resume
           </a>
-
+        
           <a
             href="https://github.com/"
             target="_blank"
@@ -114,6 +114,7 @@ export default function Hero() {
             <LinkedinIcon size={18} />
           </a>
         </motion.div>
+   
       </div>
 
       <motion.a

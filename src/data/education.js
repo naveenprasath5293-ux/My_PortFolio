@@ -1,16 +1,46 @@
-// Central data source for the Education section.
 export const EDUCATION = [
   {
-    id: "bca",
+    id: 1,
     degree: "Bachelor of Computer Applications (BCA)",
     institution: "Hindusthan College of Arts and Science",
-    period: "Expected graduation: 2027",
-    status: "In progress",
+    period: "2023 – Present",
+    status: "Pursuing",
     coursework: [
-      "Data Structures",
+      "Full Stack Development",
+      "React.js",
+      "Node.js",
+      "MongoDB",
+      "Java",
       "Web Technologies",
-      "Database Management",
-      "Software Engineering",
+    ],
+  },
+
+  {
+    id: 2,
+    degree: "Higher Secondary Certificate (HSC)",
+    institution: "M.P.D Government Higher Secondary School",
+    period: "2023 – 2024",
+    status: "94.7%",
+    coursework: [
+      "Computer Applications",
+      "Economics",
+      "Accounts",
+      "commerce",
+    ],
+  },
+
+  {
+    id: 3,
+    degree: "Secondary School Leaving Certificate (SSLC)",
+    institution: "M.P.D Government Higher Secondary School",
+    period: "2021 – 2022",
+    status: "69.7%",
+    coursework: [
+      "Tamil",
+      "Mathematics",
+      "Science",
+      "English",
+      "Social Science",
     ],
   },
 ];
